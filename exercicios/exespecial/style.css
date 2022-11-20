@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); 
 
 *{
-    margin:0 auto;
-    padding: 0 ;
+    margin:auto;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Anton', sans-serif;
  }
+
+ body{
+   background-image: url(https://wallpaperaccess.com/full/51363.jpg);
+   background-color: black;
+ }
+
+#video{
+   text-align: center;
+   
+ }
+ #video iframe{
+   position: absolute;
+   bottom:50%;
+   left: 50%;
+   transform: translate(-50%, 50%);
+   border: 5px solid black;
+   border-radius: 10px;
+   box-shadow: -1px 10px 16px dodgerblue;
+ }
+ 
 
   #menu-h ul {
     list-style: none;
