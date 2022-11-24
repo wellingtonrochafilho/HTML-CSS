@@ -107,6 +107,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 1vw;
     
 }
 
@@ -114,7 +115,7 @@ footer a{
     text-decoration: none;
     font-weight: bold;
     color: white;
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 footer a:hover{
