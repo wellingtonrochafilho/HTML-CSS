@@ -19,10 +19,9 @@
         padding: 20px;
     }
     th{
-        padding: 50px;
+        padding: 48px;
         border: 1px solid black;
         background-color: rgba(128, 128, 128, 0.425);
-        
     }
     a{
         text-decoration: none;
@@ -31,15 +30,16 @@
     a:hover{
         text-decoration: underline;
     }
-
-    tfoot {
-        
-        width: 400px;
-        
-        
-
-
+   
+    #linha{
+       border-right: none;
+       text-align: left;
     }
+    #linha2{
+       border-left: none;
+       text-align: left;
+    }
+
 </Style>
 <body>
     <h1>Uso de tabelas Grandes </h1>
@@ -91,8 +91,11 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <th>210.147.125</th>
+                    
+                    <th id="linha" colspan="2">Total de Habitantes</th>
+                    <th id="linha2">210.147.125</th>
+                    
+                
             </tr>
 
         </tfoot>
