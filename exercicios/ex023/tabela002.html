@@ -10,6 +10,7 @@
 
     table{
         border-collapse: collapse;
+        
 
     }
     td{
@@ -21,7 +22,8 @@
     th{
         padding: 48px;
         border: 1px solid black;
-        background-color: rgba(128, 128, 128, 0.425);
+        
+        background-color:rgb(106, 106, 247);
     }
     a{
         text-decoration: none;
@@ -40,11 +42,32 @@
        text-align: left;
     }
 
+    tbody tr:nth-child(2n) {
+        background-color: lightblue;
+    }
+
+
+    thead tr th{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(106, 106, 247)
+        ;
+       
+    }
+
+    tr:hover {
+            border: 2px solid rgb(23, 9, 226);
+        }
+    
+       
+
+
 </Style>
 <body>
     <h1>Uso de tabelas Grandes </h1>
     <!--Anatomia PARA TABELAS GRANDES
     TABLE
+        Caption
          THEAD
               TR, TD, TH
          TBODY
@@ -54,11 +77,12 @@
             
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
           <tr>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da pop.total</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col">% da pop.total</th>
           </tr>
 
         </thead>
@@ -83,6 +107,98 @@
                 <td>14 016 906</td>
                 <td>7,1%</td></tr>
                 
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num" colspan="2">11.433.957</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num" colspan="2">11.377.239</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num" colspan="2">9.557.071</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num" colspan="2">9.132.078</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num" colspan="2">8.602.865</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num" colspan="2">7.164.788</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num" colspan="2">7.075.181</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td class="num" colspan="2">7.018.354</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num" colspan="2">4.144.597</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="num" colspan="2">4.018.650</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="num" colspan="2">4.018.127</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num" colspan="2">3.506.853</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num" colspan="2">3.484.466</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num" colspan="2">3.337.357</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num" colspan="2">3.273.227</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num" colspan="2">3.015.268</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num" colspan="2">2.778.986</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num" colspan="2">2.298.696</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td class="num" colspan="2">1.777.225</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num" colspan="2">1.572.866</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num" colspan="2">881.935</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="num" colspan="2">845.731</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num" colspan="2">605.761</td>
+                </tr>
 
             
 
@@ -102,7 +218,22 @@
 
 
     </table>
-         
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate exercitationem, sapiente quis facilis, accusantium officiis accusamus fuga quo officia ad magni tenetur laborum consequatur voluptates perferendis non. Molestiae, corporis hic. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem expedita atque, fugit maiores fuga a aliquam neque laboriosam ratione quae voluptate, provident in reprehenderit sapiente vel dolor at ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi natus ullam assumenda excepturi, incidunt vitae, laborum consequuntur rerum animi aliquid similique placeat exercitationem molestias? Maiores quibusdam officiis assumenda accusamus illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil mollitia consequatur ipsa assumenda modi cupiditate inventore quaerat, repellat molestiae dicta ipsum, porro itaque maiores optio voluptatibus, qui velit sint!</p>
     
 </body>
 </html>

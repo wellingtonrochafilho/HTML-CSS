@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px black solid;
+            padding: 10px;
+        }
+        th {
+            border: 1px black solid;
+            padding: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="a">Ana Maria Santos</td>
+                <td class="a">Alien</td>
+                <td class="a">Rambo</td>
+                <td class="a">Vingadores</td>
+            </tr>
+            <tr>
+                <td class="b">Beatriz Souza</td>
+                <td class="b">Hulk</td>
+                <td class="b">Inception</td>
+                <td class="b">Batman</td>
+            </tr>
+            <tr>
+                <td class="c">Claudia Melo</td>
+                <td class="c">Oblivion</td>
+                <td class="c">Matrix</td>
+                <td class="c">Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td class="d">Bruno</td>
+                <td class="d">Intocaveis</td>
+                <td class="d">Amnesia</td>
+                <td class="d">Gladiador</td>
+            </tr>
+            <tr>
+                <td class="e">Daniel</td>
+                <td class="e">Wall-E</td>
+                <td class="e">Oldboy</td>
+                <td class="e">Dangal</td>
+            </tr>
+            <tr>
+                <td class="f">Fabiano</td>
+                <td class="f">Star Wars 5</td>
+                <td class="f">Taxi driver</td>
+                <td class="f">Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <Td>1000</Td>
+            </tr>
+
+        </tfoot>
+    
+    
+    
+    </table>
+
+    
+</body>
+</html>
